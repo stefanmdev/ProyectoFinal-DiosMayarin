@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Tienda Virtual</title>
+    <link rel="shortcut icon" href="./img/logo-js.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+
+    <header class="header">
+        <div class="header-barra_superior">
+            <p>¡APROVECHÁ NUESTROS PRECIOS ÚNICOS! - 10% off sólo los jueves</p>
+        </div>
+
+        <div class="header-navegacion">
+            <div class="header-logo__barra">
+                <a class="header-logo" href="./index.html">
+                    <i class="bi bi-controller"></i>
+                    <h2>TiendaVirtual</h2>
+                </a>
+        
+                <div class="header-barra">
+                    <div class="header-contactos">
+                        <a class="contactos-enlace" href="tel:(011) 4541 4807">
+                            <i class="bi bi-telephone-fill"></i>
+                            <span class="enlace-info">(011) 4541 4807</span>
+                        </a>
+                        <a class="contactos-enlace" href="mailto:tiendavirtual@gmail.com">
+                            <i class="bi bi-envelope"></i>
+                            <span class="enlace-info">tiendavirtual@gmail.com</span>
+                        </a>
+                        <a class="contactos-enlace" href="https://www.instagram.com/">
+                            <i class="bi bi-instagram"></i>
+                            <span class="enlace-info">TiendaVirtual</span>
+                        </a>
+                    </div>
+        
+                    <form class="header-buscador" id="header-buscador">
+                        <input id="buscador-input" type="text" class="campoBuscar" placeholder="Buscar juego">
+                        <input type="submit" class="botonBuscar" value="🔎︎">
+                    </form>
+                </div>
+            </div>
+        </div>
+
+    </header>
+    
+    <main class="main">
+
+        <aside class="main-hero">
+
+            <div class="main-categorias">
+                <ul class="lista-categorias">
+                    <li class="cat"><a>CATEGORÍAS</a></li>
+                    <li id="todos" class="cat active"><a>Todos los productos</a></li>
+                    <li id="deportes" class="cat"><a>Deportes</a></li>
+                    <li id="cooperativo" class="cat"><a>Cooperativo</a></li>
+                    <li id="disparos" class="cat"><a>Disparos</a></li>
+                    <li id="mundoabierto" class="cat"><a>Mundo Abierto</a></li>
+                </ul>
+            </div>
+
+            <img class="main-img" src="./img/slider.jpeg" alt="Slider Ecommerce">
+
+        </aside>
+
+        <div class="boton-carrito" id="boton-carrito">
+            <div class="numero">
+                <p id="cantidad-productos">0</p>
+            </div>
+            <i class="bi bi-cart-fill"></i>
+        </div>
+
+        <div class="main-carrito disabled" id="main-carrito">
+
+            <div class="carrito-titulo">
+                <h4 class="titulo">Carrito</h4>
+                <div class="vaciar" id="vaciar-carrito"><small><b>Vaciar carrito</b></small></div>
+                <div class="cerrar" id="cerrar-carrito"><i class="bi bi-x"></i></div>
+            </div>
+
+            <div class="carrito-productos" id="carrito-productos">
+                <!-- Aca se cargan los productos del carrito -->
+            </div>
+
+            <a href="./carrito.html">
+                <div class="carrito-confirmar">
+                    <h5>
+                        Finalizar Compra:
+                        <span id="total">0</span>
+                    </h5>
+                </div>
+            </a>
+
+        </div>
+
+        <div class="contenedor-main-productos">
+
+            <h3 id="titulo-principal" class="nombre-categoria">Todos los productos</h3>
+
+            <section class="main-productos" id="main-productos">
+                <!-- Aca van cargados los productos -->
+            </section>
+        </div>
+
+    </main>
+
+    <footer class="footer">
+        <img class="metodos-pago" src="./img/metodos-pago.png" alt="Metodos de Pago">
+        <p class="footer-p">© CoderHouse</p>
+    </footer> 
+    
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <script src="./js/main.js"></script>
+
+</body>
+</html>
